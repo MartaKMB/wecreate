@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto:300,400');
 
 $font_montserrat: 'Montserrat', sans-serif;
 $font_roboto: 'Roboto', sans-serif;
@@ -42,3 +42,5 @@ $end_color: #9326F0;
     /* W3C Markup */ 
     background-image: linear-gradient(to top right, $start_color 0%, $end_color 100%);
 }
+
+$btn_border_color: #c244c1;

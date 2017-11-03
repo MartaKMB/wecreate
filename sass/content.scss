@@ -1,0 +1,96 @@
+.wrapper_flex {
+    width: 80vw;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .txt_section {
+        flex-basis: 50%;
+        min-height: 35vh;
+        display: flex;
+        
+        padding: 1rem;
+        
+        .big_nr {
+            font-size: 24.7rem;
+            letter-spacing: 1.2rem;
+            font-family: $font_montserrat;
+            z-index: 0;
+            flex-basis: 30%;
+        }
+        
+        .txt_div {
+            width: 80%;
+            z-index: 1;
+            margin-left: -8rem;
+            flex-basis: 70%;
+            font-family: $font_montserrat;
+            color: $font_purple;
+            
+            h3 {
+                width: auto;
+                font-size: 2.7rem;
+                letter-spacing: .4rem;
+                margin-bottom: 2.2rem;
+            }
+            
+            p {
+                font-size: 1.2rem;
+                letter-spacing: .2rem;
+                margin-bottom: 2.2rem;
+            }
+            
+            .btn_more {
+                font-size: 1.5rem;
+                font-family: $font_montserrat;
+                font-weight: 700;
+                letter-spacing: .2rem;
+                background-color: transparent;
+                color: $font_purple;
+                border: .2rem solid $btn_border_color;
+                padding: 1rem 1.2rem;
+            }
+            
+        }
+    } 
+    
+    .img_section {
+        flex-basis: 50%;
+        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img {
+        min-width: 409px;
+        height: auto;
+    }
+}
+
+.n1 {
+    color: #e579d7;
+}
+
+.n2 {
+    color: #fb8097;
+}
+
+.n3 {
+    color: #e421b4;
+}
+
+.middle_banner {
+    width: 100%;
+    height: 50vh;
+    background: url('../img/fullbg.jpg');
+    background-position: 0 10%;
+    margin: {
+        top: 2.2rem;
+        bottom: 2.2rem;
+    }
+}
