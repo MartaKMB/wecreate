@@ -1,0 +1,96 @@
+.site_footer {
+    min-height: 50vh;
+    @include background_gradient_footer($start_color, $end_color);
+    margin-top: 4rem;
+    
+    .say_hello {
+        font-size: 6.3rem;
+        font-family: $font_montserrat;
+        color: $font_purple;
+        font-weight: 700;
+        
+        min-height: 45vh;
+        flex-basis: 50%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    p {
+        font-size: 1rem;
+        font-family: $font_montserrat;
+        color: $font_purple;
+        text-transform: uppercase;
+        width: 80vw;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+        padding-bottom: 2rem;
+    }
+}
+
+.contact_form {
+    min-height: 45vh;
+    padding: 2rem;
+    flex-basis: 50%;
+    
+    font-size: 1.2rem;
+    font-family: $font_montserrat;
+    color: $font_purple;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    label, input, textarea, button {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        margin: {
+            top: .5rem;
+            bottom: 1rem;
+        }
+    }
+    
+    input {
+        border: {
+            top: none;
+            left: none;
+            right: none;
+            bottom: .2rem solid $font_purple;
+        }
+        
+        color: #ffffff;
+        font-family: $font_roboto;
+        font-size: 1.4rem;
+        letter-spacing: .4rem;
+        padding: .2rem;
+    }
+    
+    textarea {
+        border: .2rem solid $font_purple;
+        
+        color: #ffffff;
+        font-family: $font_roboto;
+        font-size: 1.4rem;
+        letter-spacing: .4rem;
+        padding: .2rem;
+    }
+    
+    .btn_send {
+        border: .2rem solid #ffffff;
+        color: #ffffff;
+        font-family: $font_montserrat;
+        font-weight: 700;
+        font-size: 1.4rem;
+        letter-spacing: .4rem;
+        width: 50%;
+        height: 4rem;
+        
+        align-self: flex-start;
+    }
+}

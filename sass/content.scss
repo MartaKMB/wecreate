@@ -28,6 +28,7 @@
             width: 80%;
             z-index: 1;
             margin-left: -8rem;
+            padding-left: .4rem;
             flex-basis: 70%;
             font-family: $font_montserrat;
             color: $font_purple;
@@ -86,11 +87,21 @@
 
 .middle_banner {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     background: url('../img/fullbg.jpg');
     background-position: 0 10%;
     margin: {
-        top: 2.2rem;
-        bottom: 2.2rem;
+        top: 4rem;
+        bottom: 4rem;
     }
+    
+    font-family: $font_montserrat;
+    font-size: 7.3rem;
+    font-weight: 700;
+    letter-spacing: .4rem;
+    color: #ffffff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

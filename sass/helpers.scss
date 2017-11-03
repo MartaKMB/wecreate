@@ -21,7 +21,7 @@ ul li {
 $start_color: #FE6A83;
 $end_color: #9326F0;
 
-@mixin background_gradient($start_color, $end_color) {
+@mixin background_gradient_header($start_color, $end_color) {
     
     background-image: $start_color;
     /* IE10+ */ 
@@ -41,6 +41,28 @@ $end_color: #9326F0;
 
     /* W3C Markup */ 
     background-image: linear-gradient(to top right, $start_color 0%, $end_color 100%);
+}
+
+@mixin background_gradient_footer($start_color, $end_color) {
+    
+    background-image: $start_color;
+    /* IE10+ */ 
+    background-image: -ms-linear-gradient(top left, $start_color 0%, $end_color 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top left, $start_color 0%, $end_color 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top left, $start_color 0%, $end_color 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, $start_color), color-stop(100, $end_color));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top left, $start_color 0%, $end_color 100%);
+
+    /* W3C Markup */ 
+    background-image: linear-gradient(to bottom right, $start_color 0%, $end_color 100%);
 }
 
 $btn_border_color: #c244c1;
