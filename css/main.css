@@ -3,6 +3,8 @@
 
 html { font-size: 10px; }
 
+body { overflow-x: hidden; }
+
 ul li { list-style: none; }
 
 .site_header { height: 50vh; background-image: #FE6A83; /* IE10+ */ background-image: -ms-linear-gradient(bottom left, #FE6A83 0%, #9326F0 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom left, #FE6A83 0%, #9326F0 100%); /* Opera */ background-image: -o-linear-gradient(bottom left, #FE6A83 0%, #9326F0 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #FE6A83), color-stop(100, #9326F0)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom left, #FE6A83 0%, #9326F0 100%); /* W3C Markup */ background-image: linear-gradient(to top right, #FE6A83 0%, #9326F0 100%); display: flex; flex-direction: column; margin-bottom: 4rem; }
@@ -13,6 +15,10 @@ nav { width: 80vw; margin-left: auto; margin-right: auto; }
 nav ul { width: 50%; margin-left: auto; margin-right: auto; display: flex; justify-content: space-between; align-items: center; }
 nav ul li { text-align: center; text-transform: uppercase; font-size: 1.2rem; font-family: "Montserrat", sans-serif; letter-spacing: .2rem; color: #582782; padding: 1rem; }
 
+.wave2 { height: 6rem; position: absolute; top: 36vh; right: 0; }
+
+.wave1 { height: 6rem; position: absolute; top: 46vh; right: -6rem; }
+
 .wrapper_flex { width: 80vw; margin-left: auto; margin-right: auto; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; }
 .wrapper_flex .txt_section { flex-basis: 50%; min-height: 35vh; display: flex; padding: 1rem; }
 .wrapper_flex .txt_section .big_nr { font-size: 24.7rem; letter-spacing: 1.2rem; font-family: "Montserrat", sans-serif; z-index: 0; flex-basis: 30%; }
@@ -21,7 +27,8 @@ nav ul li { text-align: center; text-transform: uppercase; font-size: 1.2rem; fo
 .wrapper_flex .txt_section .txt_div p { font-size: 1.2rem; letter-spacing: .2rem; margin-bottom: 2.2rem; }
 .wrapper_flex .txt_section .txt_div .btn_more { font-size: 1.5rem; font-family: "Montserrat", sans-serif; font-weight: 700; letter-spacing: .2rem; background-color: transparent; color: #582782; border: 0.2rem solid #c244c1; padding: 1rem 1.2rem; }
 .wrapper_flex .img_section { flex-basis: 50%; display: flex; justify-content: center; }
-.wrapper_flex .img { min-width: 409px; height: auto; }
+.wrapper_flex .img { min-width: 409px; height: auto; margin: .2rem; }
+.wrapper_flex .img_first { margin-top: 1.2rem; }
 
 .n1 { color: #e579d7; }
 
@@ -30,6 +37,8 @@ nav ul li { text-align: center; text-transform: uppercase; font-size: 1.2rem; fo
 .n3 { color: #e421b4; }
 
 .middle_banner { width: 100%; height: 45vh; background: url("../img/fullbg.jpg"); background-position: 0 10%; margin-top: 4rem; margin-bottom: 4rem; font-family: "Montserrat", sans-serif; font-size: 7.3rem; font-weight: 700; letter-spacing: .4rem; color: #ffffff; display: flex; justify-content: center; align-items: center; }
+
+.wave3 { height: 6rem; position: absolute; left: 0; margin-top: -7rem; }
 
 .site_footer { min-height: 50vh; background-image: #FE6A83; /* IE10+ */ background-image: -ms-linear-gradient(top left, #FE6A83 0%, #9326F0 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top left, #FE6A83 0%, #9326F0 100%); /* Opera */ background-image: -o-linear-gradient(top left, #FE6A83 0%, #9326F0 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FE6A83), color-stop(100, #9326F0)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top left, #FE6A83 0%, #9326F0 100%); /* W3C Markup */ background-image: linear-gradient(to bottom right, #FE6A83 0%, #9326F0 100%); margin-top: 4rem; }
 .site_footer .say_hello { font-size: 6.3rem; font-family: "Montserrat", sans-serif; color: #582782; font-weight: 700; min-height: 45vh; flex-basis: 50%; display: flex; justify-content: center; align-items: center; }
